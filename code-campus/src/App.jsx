@@ -210,7 +210,7 @@ function App() {
     setSubmitMessage('')
 
     try {
-      const response = await fetch('http://localhost:5001/api/forms', {
+      const response = await fetch('ample-luck-production-1432.up.railway.app/api/forms', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

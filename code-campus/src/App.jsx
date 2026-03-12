@@ -210,13 +210,13 @@ function App() {
     setSubmitMessage('')
 
     try {
-      const response = await fetch('ample-luck-production-1432.up.railway.app/api/forms', {
+      const response = await fetch(import.meta.env.VITE_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(payload),
-      })
+      });
 
       const data = await response.json()
 
